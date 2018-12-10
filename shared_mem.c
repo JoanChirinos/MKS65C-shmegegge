@@ -13,6 +13,7 @@ void change_data(char* data) {
   if (response[0] == 'y') {
     printf("Enter your new data below, then press enter:\n");
     fgets(data, 200, stdin);
+    data[201] = 0;
   }
   free(response);
 }
